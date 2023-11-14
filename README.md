@@ -13,8 +13,6 @@
 - [Index](#index)
 - [Procedure](#procedure)
 - [Function](#function)
-- [Relation schema](#relation-schema)
-
 
 ## Introduction
 
@@ -34,9 +32,11 @@ Before creating a database, it's necessary to create an er diagram.
 
 Normalization is one of the most important parts that needs to be done correctly in oreder to eliminate anomalies, and to be able to continue with the database design. In order for the diagram to be normalized, all normalization rules must be followed (to create such a model that will not disturb any of the normal forms).
 
-<i>Note: It was used ORACLE notation to create model.</i>
+<img alt = "ER Diagram" src = "https://github.com/fajni/Oracle_Database_Project/blob/main/pics/er_diagram.png"/>
 
-<img alt="er diagram" src="pics/er.png"/>
+<i>Note: ORACLE notatio: 
+[*ER Diagram*](https://github.com/fajni/Oracle_Database_Project/blob/main/pics/er.png), [*Relation schema*](https://github.com/fajni/Oracle_Database_Project/blob/main/pics/relation.png)
+</i>
 
 ## Denormalization
 
@@ -115,7 +115,3 @@ When inserting a suppliers into the database, it's checked whether such a suppli
 ## Function
 
 The function <i>number_deliveries</i> which is created, counts how many deliveries were made for a given date. The delivery date is passed as a function parameter, and a text message with an integer value as the return result. If there are no deliveries for the forwarded date, a message that there are no such deliveries will be displayed. If there is, the recalculated number of deliveries is returned as a return value together with a corresponding message of the total number of those deliveries.
-
-## Relation schema
-
-<img alt="relation" src="pics/relation.png"/>
